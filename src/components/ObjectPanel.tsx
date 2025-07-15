@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Door, Square, Circle, Sofa, Bath, ChefHat } from 'lucide-react';
+import { DoorOpen, Square, Circle, Sofa, Bath, ChefHat } from 'lucide-react';
 import { ObjectType } from '../types';
 import './ObjectPanel.css';
 
@@ -9,9 +9,9 @@ interface ObjectPanelProps {
 
 const objectCategories = {
   doors: [
-    { id: 'door', name: 'Door', icon: Door, defaultWidth: 80, defaultHeight: 20 },
-    { id: 'double-door', name: 'Double Door', icon: Door, defaultWidth: 120, defaultHeight: 20 },
-    { id: 'sliding-door', name: 'Sliding Door', icon: Door, defaultWidth: 100, defaultHeight: 20 },
+    { id: 'door', name: 'Door', icon: DoorOpen, defaultWidth: 80, defaultHeight: 20 },
+    { id: 'double-door', name: 'Double Door', icon: DoorOpen, defaultWidth: 120, defaultHeight: 20 },
+    { id: 'sliding-door', name: 'Sliding Door', icon: DoorOpen, defaultWidth: 100, defaultHeight: 20 },
   ],
   furniture: [
     { id: 'sofa', name: 'Sofa', icon: Sofa, defaultWidth: 180, defaultHeight: 80 },
